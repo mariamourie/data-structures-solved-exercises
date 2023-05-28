@@ -34,21 +34,6 @@ void insert(node *list, int number) {
 	}
 }
 
-void display(node *list) {
-	node *aux;
-	if(!isEmpty(list)) {
-		if(aux) {
-			aux = list->next;
-			while(aux != NULL) {
-				printf(" %d ", aux->number);
-				aux = aux->next;
-			}
-		}
-	}
-	free(aux);
-	printf("\n\n");
-}
-
 int findHighestValue(node *list) {
 	node *aux;
 	int highest = list->next->number;
